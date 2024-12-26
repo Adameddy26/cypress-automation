@@ -6,15 +6,15 @@ Given('I navigate to the "Sign In" page', () => {
 });
 
 When('I enter valid credentials', () => {
-    LoginPage.login('john.doe@example.com', 'Password@123');
+    LoginPage.login('adam.eddy@example.com', 'Password@123');
 });
 
 When('I enter an incorrect password', () => {
-    LoginPage.login('john.doe@example.com', 'WrongPass123');
+    LoginPage.login('adam.eddy@example.com', 'WrongPass123');
 });
 
 Then('I should be logged in successfully', () => {
-    cy.contains('Welcome, John').should('be.visible');
+    cy.contains('Welcome, Adam').should('be.visible');
 });
 
 Then('I should see an error message', () => {
