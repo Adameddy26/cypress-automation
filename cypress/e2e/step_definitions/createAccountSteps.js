@@ -18,5 +18,5 @@ Then('the account should be created successfully', () => {
 });
 
 Then('I should see an error message about password policy', () => {
-    cy.contains('Password should contain at least 3 different classes').should('be.visible');
+    cy.contains('Minimum of different classes of characters in password is 3').should('be.visible');
 });
