@@ -18,5 +18,5 @@ Then('I should be logged in successfully', () => {
 });
 
 Then('I should see an error message', () => {
-    cy.contains('Invalid login or password').should('be.visible');
+    cy.contains('The account sign-in was incorrect or your account is disabled temporarily').should('be.visible');
 });
