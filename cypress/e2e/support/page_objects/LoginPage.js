@@ -1,6 +1,6 @@
 class LoginPage {
     navigate() {
-        cy.visit('/customer/account/login/');
+        cy.visit('https://magento.softwaretestingboard.com/customer/account/login/');
     }
 
     login(email, password) {
