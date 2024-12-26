@@ -6,11 +6,11 @@ Given('I navigate to the "Create an Account" page', () => {
 });
 
 When('I fill in the form with valid details', () => {
-    CreateAccountPage.fillForm('John', 'Doe', 'john.doe@example.com', 'Password@123', 'Password@123');
+    CreateAccountPage.fillForm('Adam', 'Eddy', 'adam.eddy@example.com', 'Password@123', 'Password@123');
 });
 
 When('I fill in the form with invalid password', () => {
-    CreateAccountPage.fillForm('John', 'Doe', 'john.doe@example.com', 'weakpass', 'weakpass');
+    CreateAccountPage.fillForm('Adam', 'Eddy', 'adam.eddy@example.com', 'weakpass', 'weakpass');
 });
 
 Then('the account should be created successfully', () => {
