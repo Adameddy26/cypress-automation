@@ -1,6 +1,6 @@
 class CreateAccountPage {
     navigate() {
-        cy.visit('/customer/account/create/');
+        cy.visit('https://magento.softwaretestingboard.com/customer/account/create/');
     }
 
     fillForm(firstName, lastName, email, password, confirmPassword) {
