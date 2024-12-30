@@ -1,14 +1,14 @@
 {
   "validUser": {
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "john.doe@example.com",
-    "password": "Password123!"
+    "firstName": "Adam",
+    "lastName": "Eddy",
+    "email": "adam.eddy@test123.com",
+    "password": "Adameddy123"
   },
   "invalidUser": {
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "john.doe@example.com",
-    "password": "123"
+    "firstName": "Adam",
+    "lastName": "Eddy",
+    "email": "adam.eddy@test123.com",
+    "password": "Adameddy"
   }
 }

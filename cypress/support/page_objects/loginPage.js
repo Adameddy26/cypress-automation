@@ -18,7 +18,7 @@ class LoginPage {
   }
 
   verifyLoginError() {
-    cy.contains('Invalid login or password').should('be.visible');
+    cy.contains('The account sign-in was incorrect').should('be.visible');
   }
 }
 

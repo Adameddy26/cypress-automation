@@ -51,7 +51,7 @@ When('I enter valid credentials', function () {
 When('I enter invalid credentials', function () {
   cy.fixture('testData').then((data) => {
     const user = data.invalidUser;
-    loginPage.fillLoginForm(user.email, 'WrongPassword!');
+    loginPage.fillLoginForm(user.email, 'WrongPassword');
   });
 });
 

@@ -21,7 +21,7 @@ class SignupPage {
   }
 
   verifyPasswordError() {
-    cy.contains('The password must have at least').should('be.visible');
+    cy.contains('Minimum of different classes of characters in password is 3').should('be.visible');
   }
 }
 
