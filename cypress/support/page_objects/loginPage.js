@@ -13,11 +13,12 @@ class LoginPage {
   }
 
   verifyLogin() {
-    cy.url().should('include', '/customer/account/');
+    cy.url().should('include', '/customer/account');
+    cy.contains('Welcome').should('be.visible');
   }
 
   verifyLoginError() {
-    cy.get('.error-msg').should('contain', 'Invalid login or password.');
+    cy.contains('Invalid login or password').should('be.visible');
   }
 }
 

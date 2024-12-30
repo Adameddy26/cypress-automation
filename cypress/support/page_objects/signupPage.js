@@ -16,11 +16,12 @@ class SignupPage {
   }
 
   verifyAccountDashboard() {
-    cy.url().should('include', '/customer/account/');
+    cy.url().should('include', '/customer/account');
+    cy.contains('My Account').should('be.visible');
   }
 
   verifyPasswordError() {
-    cy.get('.error-msg').should('contain', 'Please enter a valid password');
+    cy.contains('The password must have at least').should('be.visible');
   }
 }
 
